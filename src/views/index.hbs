@@ -1,0 +1,31 @@
+<div class="jumbotron mt-4 text-center" >
+    <h1 class="display-4">WorkSite</h1>
+    <p class="lead">Encuentra las manos que transformaran tu casa</p>
+    <hr class="my-4">
+</div>
+
+<div class="row">
+    {{#each usuarios}}
+        <div class="col-md-3">
+            <div class="card mt-2">
+                <div class="card-body">
+                    
+                        <h4 class="card-title">
+                            {{name}}
+                        </h4>
+                        <p class="card-text">{{email}}</p>
+                         <a href="users/galeria" class="card-link">Mira mi carpeta de trabajo</a>
+                    </div>
+                </div>
+            </div>
+            {{else}}
+            <div class="card mx-auto">
+                <div class="card-body">
+                    <h1 class="text-center"> Hola </h1>
+                    <p class="lead"> No hay usuarios registrados en la plataforma aún</p>
+                </div>
+            </div>
+      
+
+    {{/each}}
+</div>
